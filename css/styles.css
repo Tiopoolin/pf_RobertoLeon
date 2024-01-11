@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 8px;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "encuentranos"
+        "footer";
+    font-family: 'Raleway', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+
+}
+
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+}
+
+.small {
+    font-size: small;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.white {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.interline {
+    letter-spacing: 5px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav img {
+    width: 70px;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin-left: 30px;
+
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+
+}
+
+.carru {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/Captura\ de\ Pantalla\ 2022-04-25\ a\ la\(s\)\ 23.04.12.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.sobrebanner {
+    z-index: 1;
+    /* Coloca el contenido encima del fondo */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.carru div p {
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+section {
+    grid-area: section;
+
+}
+
+.galeria_venta {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "f1 f2"
+        "f3 f4"
+        "f5 f6"
+        "f7 f8"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria_venta div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    /*horizontal*/
+    /* justify-content: center;*/
+    /*vertical */
+}
+
+.galeria_venta div:first-child {
+    grid-area: titulo;
+    margin: 20px 0px;
+}
+
+.galeria_venta div:nth-child(2) {
+    grid-area: f1;
+}
+
+.galeria_venta div:nth-child(3) {
+    grid-area: f2;
+
+}
+
+.galeria_venta div:nth-child(4) {
+    grid-area: f3;
+
+}
+
+.galeria_venta div:nth-child(5) {
+    grid-area: f4;
+
+}
+
+.galeria_venta div:nth-child(6) {
+    grid-area: f5;
+
+}
+
+.galeria_venta div:nth-child(7) {
+    grid-area: f6;
+
+}
+
+.galeria_venta div:nth-child(8) {
+    grid-area: f7;
+
+}
+
+.galeria_venta div:nth-child(8) {
+    grid-area: f8;
+
+}
+
+.galeria_venta div img {
+    width: 190px;
+    height: 250px;
+
+}
+
+.encuentranos {
+    grid-area: encuentranos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+}
+
+.encuentranos div h4 {
+    margin-top: 20px;
+}
+
+.encuentranos2 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telefono {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.telefono div {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.telefono img {
+    width: 50px;
+    align-items: center;
+    margin: 5px;
+}
+
+.telefono div p {
+    justify-content: center;
+
+}
+
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.piepag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(46, 81, 59, 1);
+    margin-bottom: 10px;
+}
+
+.piepag ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.piepag ul li a {
+    color: white;
+    font-size: 1.3em;
+}
+
+.pagos {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "boton"
+        "pagos"
+        "reservado";
+    justify-items: center;
+    /* justify-content: center; */
+    /* align-items: center;
+    align-content: center; */
+    gap: 10px;
+
+}
+
+.pagos p {
+    grid-area: reservado;
+    justify-self: left;
+
+}
+
+.pagos a {
+    grid-area: boton;
+}
+
+.pagos div {
+    grid-area: pagos;
+}
+
+.pagos div img {
+    width: 80px;
+    border: solid;
+    border-width: 1px;
+    border-color: #9f9f9f66;
+}
+
+.pagos a img {
+    width: 30px;
+}
+
+
+.collares {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/DB0B07A1-A58E-49A1-9284-4BC6A3B03112_1_201_a.jpeg_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.collares1 {
+
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+.collares2 {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 150px;
+
+}
+
+.collares H1 {
+
+
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5PX;
+
+}
+
+.aros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/banner_aros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.aros1 {
+
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+.aros2 {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 150px;
+
+}
+
+.aros H1 {
+
+
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5PX;
+
+}
+
+.anillos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/banner_anillos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.anillos1 {
+
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+.anillos2 {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 150px;
+
+}
+
+.anillos H1 {
+
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5PX;
+
+}
+
+.contacto {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+
+
+}
+
+.contacto2 {
+    padding-left: 20px;
+}
+
+.contacto3 {
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+    padding-right: 20px;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin:20px 0;
+}
+
+.formulario div {
+    width: 70%;
+}
+
+
+.formulario div p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formulario div label {
+    font-weight: bold;
+
+}
+
+.formulario div input {
+    width: 100%;
+    height: 20px;
+    border-color: #bcbcbc;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.formulario div textarea {
+    width: 100%;
+    border-color: #bcbcbc;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 10px;
+ 
+
+}
+
+/* .cabezera_form{
+    width: 1fr;
+} */
+
+iframe {
+    width: 100%;
+}
+
+
+
+/* .galeria_venta div img{px
+    transition: .5s;
+}
+.galeria_venta div img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.galeria_venta div{
+    overflow: hidden;
+} */
+
+@media (min-width: 550px) {
+    .galeria_venta {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "f1 f2 f3"
+            "f4 f5 f6"
+            "f7 f8 f9"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .galeria_venta {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo titulo titulo"
+            "f1 f2 f3 f4"
+            "f5 f6 f7 f8"
+
+        ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
