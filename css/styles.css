@@ -29,6 +29,29 @@ header {
     align-items: center;
 }
 
+main {
+    grid-area: main;
+    width: 100%;
+
+}
+
+section {
+    grid-area: section;
+
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* hasta aqui van las etiquetas generales */
+/* aqui empiezan clases generales */
+
 .small {
     font-size: small;
 }
@@ -48,6 +71,8 @@ header {
 .interline {
     letter-spacing: 5px;
 }
+
+/* hasta aqui van clases generales */
 
 .nav {
     display: flex;
@@ -70,11 +95,7 @@ header {
 
 }
 
-main {
-    grid-area: main;
-    width: 100%;
 
-}
 
 .carru {
     margin: 0;
@@ -115,10 +136,7 @@ main {
 
 }
 
-section {
-    grid-area: section;
 
-}
 
 .galeria_venta {
     display: grid;
@@ -145,6 +163,7 @@ section {
     /*vertical */
 }
 
+/* galeria de venta aplica en todas las paginas */
 .galeria_venta div:first-child {
     grid-area: titulo;
     margin: 20px 0px;
@@ -195,6 +214,7 @@ section {
 
 }
 
+/* aqui va el sector de contactos casi al pie de pagina */
 .encuentranos {
     grid-area: encuentranos;
     display: flex;
@@ -241,17 +261,10 @@ section {
     justify-content: center;
 
 }
+/* hasta aqui */
 
 
 
-footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
 
 .piepag {
     width: 100%;
@@ -441,6 +454,7 @@ footer {
 
 }
 
+/* desde aqui esta orientado a la pagina contacto */
 .contacto {
     width: 100%;
     height: 150px;
@@ -521,7 +535,7 @@ footer {
 iframe {
     width: 100%;
 }
-
+/* hasta aqui */
 
 
 /* .galeria_venta div img{px
@@ -536,6 +550,7 @@ iframe {
     overflow: hidden;
 } */
 
+/* aca iniciamos con los ajustes para distintos tamaños */
 @media (min-width: 550px) {
     .galeria_venta {
         display: grid;
