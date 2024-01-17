@@ -515,17 +515,17 @@ iframe {
 /* hasta aqui */
 
 
-/* .galeria_venta div img{px
-    transition: .5s;
+.galeria_venta div img{px
+    transition: .9s;
 }
 .galeria_venta div img:hover{
-    transform: scale(1.5);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 .galeria_venta div{
     overflow: hidden;
-} */
+} 
 
 /* aca iniciamos con los ajustes para distintos tamaños */
 @media (min-width: 576px) {
