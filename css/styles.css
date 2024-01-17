@@ -82,6 +82,8 @@ ul {
     letter-spacing: 5px;
 }
 
+
+
 /* hasta aqui van clases generales */
 
 .nav {
@@ -104,6 +106,12 @@ ul {
     margin-left: 30px;
 
 }
+
+.brillocarousel{
+    filter: brightness(75%);
+
+}
+
 
 
 /* se bloquea para uso de boostrap
