@@ -106,7 +106,7 @@ ul {
 }
 
 
-
+/* se bloquea para uso de boostrap
 .carru {
     margin-top: 0;
     padding: 0;
@@ -133,7 +133,7 @@ ul {
 
 .sobrebanner {
     z-index: 1;
-    /* Coloca el contenido encima del fondo */
+    /* Coloca el contenido encima del fondo "esto estaba comentado
     color: white;
     text-align: center;
     padding: 20px;
@@ -144,7 +144,7 @@ ul {
     text-align: center;
     margin: 10px 0px;
 
-}
+} */
 
 
 
@@ -169,9 +169,6 @@ ul {
     gap: 5px;
     align-items: center;
 
-    /*horizontal*/
-    /* justify-content: center;*/
-    /*vertical */
 }
 
 .galeria_venta div a {
@@ -283,7 +280,7 @@ text-align: center;
 
 
 
-/*
+/* se comenta para uso de boostrap
 .piepag {
     width: 100%;
     display: flex;
