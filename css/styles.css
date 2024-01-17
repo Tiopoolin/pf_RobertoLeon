@@ -55,6 +55,11 @@ ul {
 
 }
 
+iframe {
+    width: 100%;
+}
+
+
 /* hasta aqui van las etiquetas generales */
 /* aqui empiezan clases generales */
 
@@ -84,6 +89,7 @@ ul {
 
 
 
+
 /* hasta aqui van clases generales */
 
 .nav {
@@ -107,53 +113,10 @@ ul {
 
 }
 
-.brillocarousel{
+.brillocarousel {
     filter: brightness(75%);
 
 }
-
-
-
-/* se bloquea para uso de boostrap
-.carru {
-    margin-top: 0;
-    padding: 0;
-    height: 300px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../img/Captura\ de\ Pantalla\ 2022-04-25\ a\ la\(s\)\ 23.04.12.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.7);
-    z-index: -1;
-}
-
-.sobrebanner {
-    z-index: 1;
-    /* Coloca el contenido encima del fondo "esto estaba comentado
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-}
-
-.carru div p {
-    text-align: center;
-    margin: 10px 0px;
-
-} */
-
 
 
 .galeria_venta {
@@ -180,7 +143,7 @@ ul {
 }
 
 .galeria_venta div a {
-text-align: center;
+    text-align: center;
 }
 
 
@@ -224,7 +187,7 @@ text-align: center;
 
 }
 
-.galeria_venta div:nth-child(8) {
+.galeria_venta div:nth-child(9) {
     grid-area: f8;
 
 }
@@ -242,7 +205,8 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     background-color: #f8f8f8;
-    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .encuentranos div h4 {
@@ -287,71 +251,6 @@ text-align: center;
 /* hasta aqui */
 
 
-
-/* se comenta para uso de boostrap
-.piepag {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(46, 81, 59, 1);
-    margin-bottom: 10px;
-}
-
-.piepag ul {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px;
-}
-
-.piepag ul li a {
-    color: white;
-    font-size: 1.3em;
-}
-
-.pagos {
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-        "boton"
-        "pagos"
-        "reservado";
-    justify-items: center;
-    justify-content: center; */
-/* align-items: center;
-    align-content: center;
-    gap: 10px;
-
-}
-
-.pagos p {
-    grid-area: reservado;
-    justify-self: left;
-
-}
-
-.pagos a {
-    grid-area: boton;
-}
-
-.pagos div {
-    grid-area: pagos;
-}
-
-.pagos div img {
-    width: 80px;
-    border: solid;
-    border-width: 1px;
-    border-color: #9f9f9f66;
-}
-
-.pagos a img {
-    width: 30px;
-}
-*/
-
 .collares {
     display: flex;
     justify-content: space-between;
@@ -384,6 +283,7 @@ text-align: center;
     margin-left: 150px;
 
 }
+
 .collares2 p {
     margin-bottom: 0px;
 }
@@ -559,22 +459,113 @@ text-align: center;
     margin-bottom: 20px;
 }
 
-.botones {
+.estrella18k {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+}
+
+.estrella18k1 {
+
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+
+
+.estrella18k H1 {
+
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5PX;
+
+}
+
+.galeria_venta2 h2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    font-size: 1rem;
+
+
+}
+
+
+/* .producto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.producto2{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 50px;
-    width: 10px;
+}
+.pictures {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
 
+}
+.descripcion {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    font-size: 1rem;
+
+}
+.precio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
 
 }
 
-/* .cabezera_form{
-    width: 1fr;
-} */
-
-iframe {
+.p1{
     width: 100%;
 }
+.p2{
+    width: 49%;
+    
+}
+.descripcion ul{
+margin-left: 50px;
+list-style-type: circle;
+} */
+
 
 /* hasta aqui */
 
