@@ -515,7 +515,7 @@ iframe {
 /* hasta aqui */
 
 
-.galeria_venta div img{px
+.galeria_venta div img{
     transition: .9s;
 }
 .galeria_venta div img:hover{
