@@ -139,6 +139,7 @@ iframe {
     flex-direction: column;
     gap: 5px;
     align-items: center;
+    text-decoration:underline ;
 
 }
 
@@ -505,66 +506,10 @@ iframe {
 
 
 }
-
-
-/* .producto{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-.producto2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-}
-.pictures {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-
-}
-.descripcion {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 50px;
-    letter-spacing: 5px;
-    font-size: 1rem;
-
-}
-.precio {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 20px;
-    letter-spacing: 5px;
-    font-size: 1.5rem;
-    font-weight: bold;
-
+.pic1 {
+    height: 95%;
 }
 
-.p1{
-    width: 100%;
-}
-.p2{
-    width: 49%;
-    
-}
-.descripcion ul{
-margin-left: 50px;
-list-style-type: circle;
-} */
 
 
 /* hasta aqui */
