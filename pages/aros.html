@@ -20,17 +20,44 @@
 
 <body>
     <header id=" top">
-        <nav class="nav">
 
-            <img src="../img/logo-sup.png" alt="">
+        <nav class="navbar bg-white fixed-top">
+            <div class="container-fluid nav">
+                <img src="../img/logo-sup.png" alt="">
 
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="anillos.html">Anillos</a></li>
-                <li><a href="aros.html">Aros</a></li>
-                <li><a href="collares.html">Collares</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Times's Temple</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="anillos.html">Anillos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="aros.html">Aros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="collares.html">Collares</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -79,31 +106,31 @@
             <div class="row row-cols-1 bg-success ">
                 <ul class="col  mt-3 mb-3 d-sm-flex justify-content-sm-center">
                     <li class="px-3"><a href="../index.html">Inicio</a></li>
-                    <li class="px-3"><a href="../pages/contacto.html">Contacto</a></li>
+                    <li class="px-3"><a href="contacto.html">Contacto</a></li>
                 </ul>
-    
+
             </div>
             <div class="row row-cols-1 row-cols-sm-3 align-items-center">
-    
+
                 <a class="col order-sm-1 align-self-star mt-3 mb-3" href="#top"><img src="../img/Rectangle Copy.png"
                         alt="triangulo"></a>
-    
+
                 <div class="col order-sm-2 align-self-end mt-3 mb-3">
-                    <img src="../img/pay-webpay.png" alt="" class="../-fluid max-width-100">
+                    <img src="../img/pay-webpay.png" alt="" class="img-fluid max-width-100">
                     <img src="../img/pay-flow.png" alt="" class="img-fluid max-width-100">
                     <img src="../img/pay-mercadopago.png" alt="" class="img-fluid max-width-100">
                     <img src="../img/pay-visa.png" alt="" class="img-fluid max-width-100">
                     <img src="../img/pay-master.png" alt="" class="img-fluid max-width-100">
-                </div>
+                </div>1
                 <div class="col align-self-end mt-4 mb-4">
                     <p class="m-0">© TIME'S TEMPLE 2023.</p>
                 </div>
-    
-    
+
+
             </div>
         </section>
-    
-    
+
+
     </footer>
 
 
