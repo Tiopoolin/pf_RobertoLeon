@@ -1,576 +1,478 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 8px;
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "section"
-        "encuentranos"
-        "footer";
-    font-family: 'Raleway', sans-serif;
-
+  margin: 8px;
+  display: grid;
+  grid-template-areas: "header" "main" "section" "encuentranos" "footer";
+  font-family: "Raleway", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
-
 header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
+  grid-area: header;
+  display: flex;
+  align-items: center;
 }
 
 main {
-    grid-area: main;
-    width: 100%;
-    margin-top: 80px;
-
+  grid-area: main;
+  width: 100%;
+  margin-top: 80px;
 }
 
 section {
-    grid-area: section;
-
+  grid-area: section;
 }
 
 footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 ul {
-    list-style-type: none;
-
+  list-style-type: none;
 }
 
 iframe {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* hasta aqui van las etiquetas generales */
 /* aqui empiezan clases generales */
-
 .max-width-100 {
-    max-width: 19%;
+  max-width: 19%;
 }
 
 .small {
-    font-size: small;
+  font-size: small;
 }
 
 .medium {
-    font-size: medium;
+  font-size: medium;
 }
 
 .white {
-    color: white;
+  color: white;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .interline {
-    letter-spacing: 5px;
+  letter-spacing: 5px;
 }
 
-
-
-
 /* hasta aqui van clases generales */
-
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .nav img {
-    width: 70px;
+  width: 70px;
 }
 
 .nav ul {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
 
 .nav ul li {
-    margin-left: 30px;
-
+  margin-left: 30px;
 }
 
 .brillocarousel {
-    filter: brightness(75%);
-
+  filter: brightness(75%);
 }
 
-
 .galeria_venta {
-    display: grid;
-    grid-template-areas:
-        "titulo titulo"
-        "f1 f2"
-        "f3 f4"
-        "f5 f6"
-        "f7 f8"
-    ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: center;
-    gap: 10px;
+  display: grid;
+  grid-template-areas: "titulo titulo" "f1 f2" "f3 f4" "f5 f6" "f7 f8";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 10px;
 }
 
 .galeria_venta div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    text-decoration:underline ;
-
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  text-decoration: underline;
 }
 
 .galeria_venta div a {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* galeria de venta aplica en todas las paginas */
 .galeria_venta div:first-child {
-    grid-area: titulo;
-    margin: 20px 0px;
+  grid-area: titulo;
+  margin: 20px 0px;
 }
 
 .galeria_venta div:nth-child(2) {
-    grid-area: f1;
+  grid-area: f1;
 }
 
 .galeria_venta div:nth-child(3) {
-    grid-area: f2;
-
+  grid-area: f2;
 }
 
 .galeria_venta div:nth-child(4) {
-    grid-area: f3;
-
+  grid-area: f3;
 }
 
 .galeria_venta div:nth-child(5) {
-    grid-area: f4;
-
+  grid-area: f4;
 }
 
 .galeria_venta div:nth-child(6) {
-    grid-area: f5;
-
+  grid-area: f5;
 }
 
 .galeria_venta div:nth-child(7) {
-    grid-area: f6;
-
+  grid-area: f6;
 }
 
 .galeria_venta div:nth-child(8) {
-    grid-area: f7;
-
+  grid-area: f7;
 }
 
 .galeria_venta div:nth-child(9) {
-    grid-area: f8;
-
+  grid-area: f8;
 }
 
 .galeria_venta div img {
-    width: 190px;
-    height: 250px;
-
+  width: 190px;
+  height: 250px;
 }
 
 /* aqui va el sector de contactos casi al pie de pagina */
 .encuentranos {
-    grid-area: encuentranos;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f8f8f8;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  grid-area: encuentranos;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .encuentranos div h4 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .encuentranos2 {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .telefono {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
 .telefono div {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .telefono img {
-    width: 50px;
-    align-items: center;
-    margin: 5px;
+  width: 50px;
+  align-items: center;
+  margin: 5px;
 }
 
 .telefono div p {
-    justify-content: center;
-    margin: 0;
-
+  justify-content: center;
+  margin: 0;
 }
 
 /* hasta aqui */
-
-
 .collares {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/DB0B07A1-A58E-49A1-9284-4BC6A3B03112_1_201_a.jpeg_1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/DB0B07A1-A58E-49A1-9284-4BC6A3B03112_1_201_a.jpeg_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .collares1 {
-
-    align-items: center;
-    margin-left: 150px;
-
+  align-items: center;
+  margin-left: 150px;
 }
 
 .collares2 {
-
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-right: 50px;
-    margin-left: 150px;
-
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 150px;
 }
 
 .collares2 p {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .collares H1 {
-
-
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 5PX;
-
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
 }
 
 .aros {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/banner_aros.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/banner_aros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .aros1 {
-
-    align-items: center;
-    margin-left: 150px;
-
+  align-items: center;
+  margin-left: 150px;
 }
 
 .aros2 {
-
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-right: 50px;
-    margin-left: 150px;
-
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 150px;
 }
 
 .aros2 p {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .aros H1 {
-
-
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 5PX;
-
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
 }
 
 .anillos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/banner_anillos.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/banner_anillos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .anillos1 {
-
-    align-items: center;
-    margin-left: 150px;
-
+  align-items: center;
+  margin-left: 150px;
 }
 
 .anillos2 {
-
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-right: 50px;
-    margin-left: 150px;
-
-
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 150px;
 }
 
 .anillos2 p {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .anillos H1 {
-
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 5PX;
-
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
 }
 
 /* desde aqui esta orientado a la pagina contacto */
 .contacto {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #252525;
-
-
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252525;
 }
 
 .contacto2 {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .contacto3 {
-    display: flex;
-    align-items: center;
-    font-size: .7rem;
-    padding-right: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  padding-right: 20px;
 }
 
 .contacto3 p {
-    margin-bottom: 0;
-    margin-left: 5px;
+  margin-bottom: 0;
+  margin-left: 5px;
 }
 
 .formulario {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 20px 0;
 }
 
 .formulario div {
-    width: 70%;
+  width: 70%;
 }
 
-
 .formulario div p {
-    width: 100%;
-    margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .formulario div label {
-    font-weight: bold;
-
+  font-weight: bold;
 }
 
 .formulario div input {
-    width: 100%;
-    height: 20px;
-    border-color: #bcbcbc;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 20px;
+  border-color: #bcbcbc;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 20px;
 }
 
 .formulario div textarea {
-    width: 100%;
-    border-color: #bcbcbc;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 20px;
+  width: 100%;
+  border-color: #bcbcbc;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 20px;
 }
 
 .estrella18k {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    background-color: #f8f8f8;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
 .estrella18k1 {
-
-    align-items: center;
-    margin-left: 150px;
-
+  align-items: center;
+  margin-left: 150px;
 }
 
-
-
 .estrella18k H1 {
-
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 5PX;
-
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
 }
 
 .galeria_venta2 h2 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    margin-bottom: 50px;
-    letter-spacing: 5px;
-    font-size: 1rem;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+  font-size: 1rem;
 }
+
 .pic1 {
-    height: 95%;
+  height: 95%;
 }
-
-
 
 /* hasta aqui */
-
-
-.galeria_venta div img{
-    transition: .9s;
-}
-.galeria_venta div img:hover{
-    transform: scale(1.05);
-    cursor: pointer;
+.galeria_venta div img {
+  transition: 0.9s;
 }
 
-.galeria_venta div{
-    overflow: hidden;
-} 
+.galeria_venta div img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.galeria_venta div {
+  overflow: hidden;
+}
 
 /* aca iniciamos con los ajustes para distintos tamaños */
 @media (min-width: 576px) {
-    .galeria_venta {
-        display: grid;
-        grid-template-areas:
-            "titulo titulo titulo"
-            "f1 f2 f3"
-            "f4 f5 f6"
-            "f7 f8 f9"
-        ;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        gap: 10px;
-    }
-
-
-
-    .encuentranos2 {
-
-
-        display: flex;
-        flex-direction: row;
-
-        align-items: center;
-    }
-
-
-
+  .galeria_venta {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "f1 f2 f3" "f4 f5 f6" "f7 f8 f9";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 10px;
+  }
+  .encuentranos2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
-
 @media (min-width: 1100px) {
-    .galeria_venta {
-        display: grid;
-        grid-template-areas:
-            "titulo titulo titulo titulo"
-            "f1 f2 f3 f4"
-            "f5 f6 f7 f8"
-
-        ;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        gap: 10px;
-    }
-
+  .galeria_venta {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo titulo" "f1 f2 f3 f4" "f5 f6 f7 f8";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 10px;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
