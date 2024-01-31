@@ -1,0 +1,188 @@
+.galeria_venta {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "f1 f2"
+        "f3 f4"
+        "f5 f6"
+        "f7 f8"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria_venta div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-decoration:underline ;
+
+}
+
+.galeria_venta div a {
+    text-align: center;
+}
+
+
+/* galeria de venta aplica en todas las paginas */
+.galeria_venta div:first-child {
+    grid-area: titulo;
+    margin: 20px 0px;
+}
+
+.galeria_venta div:nth-child(2) {
+    grid-area: f1;
+}
+
+.galeria_venta div:nth-child(3) {
+    grid-area: f2;
+
+}
+
+.galeria_venta div:nth-child(4) {
+    grid-area: f3;
+
+}
+
+.galeria_venta div:nth-child(5) {
+    grid-area: f4;
+
+}
+
+.galeria_venta div:nth-child(6) {
+    grid-area: f5;
+
+}
+
+.galeria_venta div:nth-child(7) {
+    grid-area: f6;
+
+}
+
+.galeria_venta div:nth-child(8) {
+    grid-area: f7;
+
+}
+
+.galeria_venta div:nth-child(9) {
+    grid-area: f8;
+
+}
+
+.galeria_venta div img {
+    width: 190px;
+    height: 250px;
+
+}
+
+.galeria_venta div img{
+    transition: .9s;
+}
+.galeria_venta div img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.galeria_venta div{
+    overflow: hidden;
+} 
+
+.galeria_venta2 h2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    font-size: 1rem;
+
+
+}
+
+.estrella18k {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: $gris_claro_corp;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+}
+
+.estrella18k1 {
+
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+
+
+.estrella18k H1 {
+
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5PX;
+
+}
+
+/* aqui va el sector de contactos casi al pie de pagina */
+.encuentranos {
+    grid-area: encuentranos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gris_claro_corp;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.encuentranos div h4 {
+    margin-top: 20px;
+}
+
+.encuentranos2 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telefono {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.telefono div {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.telefono img {
+    width: 50px;
+    align-items: center;
+    margin: 5px;
+}
+
+.telefono div p {
+    justify-content: center;
+    margin: 0;
+
+}

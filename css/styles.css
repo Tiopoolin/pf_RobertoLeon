@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +74,10 @@ iframe {
   letter-spacing: 5px;
 }
 
-/* hasta aqui van clases generales */
+.pic1 {
+  height: 95%;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -94,10 +96,6 @@ iframe {
 
 .nav ul li {
   margin-left: 30px;
-}
-
-.brillocarousel {
-  filter: brightness(75%);
 }
 
 .galeria_venta {
@@ -164,6 +162,56 @@ iframe {
   height: 250px;
 }
 
+.galeria_venta div img {
+  transition: 0.9s;
+}
+
+.galeria_venta div img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.galeria_venta div {
+  overflow: hidden;
+}
+
+.galeria_venta2 h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+  font-size: 1rem;
+}
+
+.estrella18k {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.estrella18k1 {
+  align-items: center;
+  margin-left: 150px;
+}
+
+.estrella18k H1 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
+}
+
 /* aqui va el sector de contactos casi al pie de pagina */
 .encuentranos {
   grid-area: encuentranos;
@@ -212,7 +260,6 @@ iframe {
   margin: 0;
 }
 
-/* hasta aqui */
 .collares {
   display: flex;
   justify-content: space-between;
@@ -393,62 +440,10 @@ iframe {
   margin-bottom: 20px;
 }
 
-.estrella18k {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 200px;
-  background-color: #f8f8f8;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
+.brillocarousel {
+  filter: brightness(75%);
 }
 
-.estrella18k1 {
-  align-items: center;
-  margin-left: 150px;
-}
-
-.estrella18k H1 {
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 5PX;
-}
-
-.galeria_venta2 h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  margin-bottom: 50px;
-  letter-spacing: 5px;
-  font-size: 1rem;
-}
-
-.pic1 {
-  height: 95%;
-}
-
-/* hasta aqui */
-.galeria_venta div img {
-  transition: 0.9s;
-}
-
-.galeria_venta div img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.galeria_venta div {
-  overflow: hidden;
-}
-
-/* aca iniciamos con los ajustes para distintos tamaños */
 @media (min-width: 576px) {
   .galeria_venta {
     display: grid;

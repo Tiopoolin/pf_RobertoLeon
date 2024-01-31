@@ -1,1 +1,22 @@
+
+
 @import 'generales/generales';
+@import 'utilities/variables';
+
+@import 'utilities/extend';
+@import 'utilities/maps';
+@import 'utilities/mixins';
+
+
+
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/footer';
+@import 'layout/cabeceras';
+@import 'layout/formularios';
+
+@import 'components/carrusel';
+@import 'components/botones';
+
+@import 'themes/media'

@@ -1,0 +1,166 @@
+.collares {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/DB0B07A1-A58E-49A1-9284-4BC6A3B03112_1_201_a.jpeg_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.collares1 {
+
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+.collares2 {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 150px;
+
+}
+
+.collares2 p {
+    margin-bottom: 0px;
+}
+
+.collares H1 {
+
+
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5PX;
+
+}
+
+.aros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/banner_aros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.aros1 {
+
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+.aros2 {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 150px;
+
+}
+
+.aros2 p {
+    margin-bottom: 0px;
+}
+
+.aros H1 {
+
+
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5PX;
+
+}
+
+.anillos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/banner_anillos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.anillos1 {
+
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+.anillos2 {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 150px;
+
+
+}
+
+.anillos2 p {
+    margin-bottom: 0px;
+}
+
+.anillos H1 {
+
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5PX;
+
+}
+
+/* desde aqui esta orientado a la pagina contacto */
+.contacto {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+
+
+}
+
+.contacto2 {
+    padding-left: 20px;
+}
+
+.contacto3 {
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+    padding-right: 20px;
+}
+
+.contacto3 p {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
