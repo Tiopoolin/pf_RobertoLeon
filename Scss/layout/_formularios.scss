@@ -5,36 +5,31 @@
     flex-wrap: wrap;
     align-content: center;
     margin: 20px 0;
-}
+    div {
+        width: 70%;
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        
+        }
+        input {
+            width: 100%;
+            height: 20px;
+            border-color: #bcbcbc;
+            border-style: solid;
+            border-width: 1px;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            border-color: #bcbcbc;
+            border-style: solid;
+            border-width: 1px;
+            margin-bottom: 20px;
+        }
 
-.formulario div {
-    width: 70%;
-}
-
-
-.formulario div p {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.formulario div label {
-    font-weight: bold;
-
-}
-
-.formulario div input {
-    width: 100%;
-    height: 20px;
-    border-color: #bcbcbc;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 20px;
-}
-
-.formulario div textarea {
-    width: 100%;
-    border-color: #bcbcbc;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 20px;
+    }
 }

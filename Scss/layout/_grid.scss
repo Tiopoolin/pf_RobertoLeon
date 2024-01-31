@@ -11,23 +11,30 @@
     grid-template-rows: auto;
     justify-content: center;
     gap: 10px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        text-decoration: underline;
+        overflow: hidden;
+
+        a {
+            text-align: center;
+        }
+
+        img {
+            width: 190px;
+            height: 250px;
+            transition: .9s;
+        
+        }
+
+    }
 }
 
-.galeria_venta div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    text-decoration:underline ;
 
-}
-
-.galeria_venta div a {
-    text-align: center;
-}
-
-
-/* galeria de venta aplica en todas las paginas */
 .galeria_venta div:first-child {
     grid-area: titulo;
     margin: 20px 0px;
@@ -72,23 +79,13 @@
 
 }
 
-.galeria_venta div img {
-    width: 190px;
-    height: 250px;
 
-}
-
-.galeria_venta div img{
-    transition: .9s;
-}
-.galeria_venta div img:hover{
+.galeria_venta div img:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
 
-.galeria_venta div{
-    overflow: hidden;
-} 
+
 
 .galeria_venta2 h2 {
 
@@ -117,6 +114,13 @@
     position: relative;
     flex-wrap: wrap;
     margin-bottom: 80px;
+    h1 {
+
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 5PX;
+    
+    }
 
 }
 
@@ -124,17 +128,6 @@
 
     align-items: center;
     margin-left: 150px;
-
-}
-
-
-
-.estrella18k H1 {
-
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 5PX;
-
 }
 
 /* aqui va el sector de contactos casi al pie de pagina */
@@ -146,11 +139,12 @@
     background-color: $gris_claro_corp;
     padding-top: 30px;
     padding-bottom: 30px;
+    div h4 {
+        margin-top: 20px;
+    }
+    
 }
 
-.encuentranos div h4 {
-    margin-top: 20px;
-}
 
 .encuentranos2 {
     width: 100%;
@@ -166,23 +160,21 @@
     flex-direction: column;
     align-items: center;
     margin: 10px;
-}
-
-.telefono div {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.telefono img {
-    width: 50px;
-    align-items: center;
-    margin: 5px;
-}
-
-.telefono div p {
-    justify-content: center;
-    margin: 0;
-
+    img {
+        width: 50px;
+        align-items: center;
+        margin: 5px;
+    }
+    div {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        p {
+            justify-content: center;
+            margin: 0;
+        
+        }
+    }
+    
 }

@@ -48,8 +48,6 @@ iframe {
   width: 100%;
 }
 
-/* hasta aqui van las etiquetas generales */
-/* aqui empiezan clases generales */
 .max-width-100 {
   max-width: 19%;
 }
@@ -84,16 +82,13 @@ iframe {
   align-items: center;
   width: 100%;
 }
-
 .nav img {
   width: 70px;
 }
-
 .nav ul {
   display: flex;
   list-style-type: none;
 }
-
 .nav ul li {
   margin-left: 30px;
 }
@@ -106,20 +101,23 @@ iframe {
   justify-content: center;
   gap: 10px;
 }
-
 .galeria_venta div {
   display: flex;
   flex-direction: column;
   gap: 5px;
   align-items: center;
   text-decoration: underline;
+  overflow: hidden;
 }
-
 .galeria_venta div a {
   text-align: center;
 }
+.galeria_venta div img {
+  width: 190px;
+  height: 250px;
+  transition: 0.9s;
+}
 
-/* galeria de venta aplica en todas las paginas */
 .galeria_venta div:first-child {
   grid-area: titulo;
   margin: 20px 0px;
@@ -157,22 +155,9 @@ iframe {
   grid-area: f8;
 }
 
-.galeria_venta div img {
-  width: 190px;
-  height: 250px;
-}
-
-.galeria_venta div img {
-  transition: 0.9s;
-}
-
 .galeria_venta div img:hover {
   transform: scale(1.05);
   cursor: pointer;
-}
-
-.galeria_venta div {
-  overflow: hidden;
 }
 
 .galeria_venta2 h2 {
@@ -200,16 +185,15 @@ iframe {
   flex-wrap: wrap;
   margin-bottom: 80px;
 }
+.estrella18k h1 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
+}
 
 .estrella18k1 {
   align-items: center;
   margin-left: 150px;
-}
-
-.estrella18k H1 {
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 5PX;
 }
 
 /* aqui va el sector de contactos casi al pie de pagina */
@@ -222,7 +206,6 @@ iframe {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .encuentranos div h4 {
   margin-top: 20px;
 }
@@ -241,20 +224,17 @@ iframe {
   align-items: center;
   margin: 10px;
 }
-
+.telefono img {
+  width: 50px;
+  align-items: center;
+  margin: 5px;
+}
 .telefono div {
   width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-
-.telefono img {
-  width: 50px;
-  align-items: center;
-  margin: 5px;
-}
-
 .telefono div p {
   justify-content: center;
   margin: 0;
@@ -274,6 +254,11 @@ iframe {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+.collares h1 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
+}
 
 .collares1 {
   align-items: center;
@@ -287,15 +272,8 @@ iframe {
   margin-right: 50px;
   margin-left: 150px;
 }
-
 .collares2 p {
   margin-bottom: 0px;
-}
-
-.collares H1 {
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 5PX;
 }
 
 .aros {
@@ -312,6 +290,11 @@ iframe {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+.aros h1 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
+}
 
 .aros1 {
   align-items: center;
@@ -325,15 +308,8 @@ iframe {
   margin-right: 50px;
   margin-left: 150px;
 }
-
 .aros2 p {
   margin-bottom: 0px;
-}
-
-.aros H1 {
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 5PX;
 }
 
 .anillos {
@@ -350,6 +326,11 @@ iframe {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+.anillos h1 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 5PX;
+}
 
 .anillos1 {
   align-items: center;
@@ -363,15 +344,8 @@ iframe {
   margin-right: 50px;
   margin-left: 150px;
 }
-
 .anillos2 p {
   margin-bottom: 0px;
-}
-
-.anillos H1 {
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 5PX;
 }
 
 /* desde aqui esta orientado a la pagina contacto */
@@ -395,7 +369,6 @@ iframe {
   font-size: 0.7rem;
   padding-right: 20px;
 }
-
 .contacto3 p {
   margin-bottom: 0;
   margin-left: 5px;
@@ -409,20 +382,16 @@ iframe {
   align-content: center;
   margin: 20px 0;
 }
-
 .formulario div {
   width: 70%;
 }
-
 .formulario div p {
   width: 100%;
   margin-bottom: 20px;
 }
-
 .formulario div label {
   font-weight: bold;
 }
-
 .formulario div input {
   width: 100%;
   height: 20px;
@@ -431,7 +400,6 @@ iframe {
   border-width: 1px;
   margin-bottom: 20px;
 }
-
 .formulario div textarea {
   width: 100%;
   border-color: #bcbcbc;
