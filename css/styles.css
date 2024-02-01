@@ -117,47 +117,37 @@ iframe {
   height: 250px;
   transition: 0.9s;
 }
-
+.galeria_venta div img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 .galeria_venta div:first-child {
   grid-area: titulo;
   margin: 20px 0px;
 }
-
 .galeria_venta div:nth-child(2) {
   grid-area: f1;
 }
-
 .galeria_venta div:nth-child(3) {
   grid-area: f2;
 }
-
 .galeria_venta div:nth-child(4) {
   grid-area: f3;
 }
-
 .galeria_venta div:nth-child(5) {
   grid-area: f4;
 }
-
 .galeria_venta div:nth-child(6) {
   grid-area: f5;
 }
-
 .galeria_venta div:nth-child(7) {
   grid-area: f6;
 }
-
 .galeria_venta div:nth-child(8) {
   grid-area: f7;
 }
-
 .galeria_venta div:nth-child(9) {
   grid-area: f8;
-}
-
-.galeria_venta div img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
 }
 
 .galeria_venta2 h2 {
@@ -196,7 +186,6 @@ iframe {
   margin-left: 150px;
 }
 
-/* aqui va el sector de contactos casi al pie de pagina */
 .encuentranos {
   grid-area: encuentranos;
   display: flex;
@@ -246,7 +235,7 @@ iframe {
   align-items: center;
   width: 100%;
   height: 300px;
-  background-image: url(../img/DB0B07A1-A58E-49A1-9284-4BC6A3B03112_1_201_a.jpeg_1.jpeg);
+  background-image: url(../img/DB0B07A1-A58E-49A1-9284-4BC6A3B03112_1_201_a.jpeg_1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -282,7 +271,7 @@ iframe {
   align-items: center;
   width: 100%;
   height: 300px;
-  background-image: url(../img/banner_aros.png);
+  background-image: url(../img/banner_aros.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -318,7 +307,7 @@ iframe {
   align-items: center;
   width: 100%;
   height: 300px;
-  background-image: url(../img/banner_anillos.png);
+  background-image: url(../img/banner_anillos.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

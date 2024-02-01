@@ -12,7 +12,7 @@
     justify-content: center;
     gap: 10px;
 
-    div {
+    div {   
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -28,63 +28,54 @@
             width: 190px;
             height: 250px;
             transition: .9s;
+            &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        
+        }
+        &:first-child {
+            grid-area: titulo;
+            margin: 20px 0px;
+        }
+        &:nth-child(2) {
+            grid-area: f1;
+        }
+        &:nth-child(3) {
+            grid-area: f2;
+        
+        }
+        &:nth-child(4) {
+            grid-area: f3;
+        
+        }
+        &:nth-child(5) {
+            grid-area: f4;
+        
+        }
+        &:nth-child(6) {
+            grid-area: f5;
+        
+        }
+        &:nth-child(7) {
+            grid-area: f6;
+        
+        }
+        &:nth-child(8) {
+            grid-area: f7;
+        
+        }
+        &:nth-child(9) {
+            grid-area: f8;
         
         }
 
+
+
+
+
     }
 }
-
-
-.galeria_venta div:first-child {
-    grid-area: titulo;
-    margin: 20px 0px;
-}
-
-.galeria_venta div:nth-child(2) {
-    grid-area: f1;
-}
-
-.galeria_venta div:nth-child(3) {
-    grid-area: f2;
-
-}
-
-.galeria_venta div:nth-child(4) {
-    grid-area: f3;
-
-}
-
-.galeria_venta div:nth-child(5) {
-    grid-area: f4;
-
-}
-
-.galeria_venta div:nth-child(6) {
-    grid-area: f5;
-
-}
-
-.galeria_venta div:nth-child(7) {
-    grid-area: f6;
-
-}
-
-.galeria_venta div:nth-child(8) {
-    grid-area: f7;
-
-}
-
-.galeria_venta div:nth-child(9) {
-    grid-area: f8;
-
-}
-
-
-.galeria_venta div img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 
 
 .galeria_venta2 h2 {
@@ -130,7 +121,7 @@
     margin-left: 150px;
 }
 
-/* aqui va el sector de contactos casi al pie de pagina */
+
 .encuentranos {
     grid-area: encuentranos;
     display: flex;
