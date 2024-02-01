@@ -12,11 +12,9 @@
     justify-content: center;
     gap: 10px;
 
-    div {   
-        display: flex;
-        flex-direction: column;
+    div {
+        @include flex(flex, column, center);
         gap: 5px;
-        align-items: center;
         text-decoration: underline;
         overflow: hidden;
 
@@ -28,46 +26,56 @@
             width: 190px;
             height: 250px;
             transition: .9s;
+
             &:hover {
                 transform: scale(1.05);
                 cursor: pointer;
             }
-        
+
         }
+
         &:first-child {
             grid-area: titulo;
             margin: 20px 0px;
         }
+
         &:nth-child(2) {
             grid-area: f1;
         }
+
         &:nth-child(3) {
             grid-area: f2;
-        
+
         }
+
         &:nth-child(4) {
             grid-area: f3;
-        
+
         }
+
         &:nth-child(5) {
             grid-area: f4;
-        
+
         }
+
         &:nth-child(6) {
             grid-area: f5;
-        
+
         }
+
         &:nth-child(7) {
             grid-area: f6;
-        
+
         }
+
         &:nth-child(8) {
             grid-area: f7;
-        
+
         }
+
         &:nth-child(9) {
             grid-area: f8;
-        
+
         }
 
 
@@ -80,9 +88,7 @@
 
 .galeria_venta2 h2 {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(flex, column, center);
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin-bottom: 50px;
@@ -105,12 +111,13 @@
     position: relative;
     flex-wrap: wrap;
     margin-bottom: 80px;
+
     h1 {
 
         text-align: center;
         font-weight: 400;
         letter-spacing: 5PX;
-    
+
     }
 
 }
@@ -124,16 +131,15 @@
 
 .encuentranos {
     grid-area: encuentranos;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(flex, column, center);
     background-color: $gris_claro_corp;
     padding-top: 30px;
     padding-bottom: 30px;
+
     div h4 {
         margin-top: 20px;
     }
-    
+
 }
 
 
@@ -147,25 +153,27 @@
 
 .telefono {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(flex, column, center);
+
     margin: 10px;
+
     img {
         width: 50px;
         align-items: center;
         margin: 5px;
     }
+
     div {
         width: 100%;
         align-items: center;
         display: flex;
         flex-direction: column;
+
         p {
             justify-content: center;
             margin: 0;
-        
+
         }
     }
-    
+
 }

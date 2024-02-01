@@ -64,19 +64,19 @@ iframe {
 }
 
 .small {
-    font-size: small;
-}
+    font-size: map-get($formatos_textos, peque);
+}   
 
 .medium {
-    font-size: medium;
+    font-size: map-get($formatos_textos, mediano);
 }
 
 .white {
-    color: white;
+    color: map-get($formatos_textos, color_tex);
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: map-get($formatos_textos, grosor);
 }
 
 .interline {

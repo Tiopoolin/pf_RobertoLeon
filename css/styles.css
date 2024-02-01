@@ -1,3 +1,13 @@
+.anillos,
+.aros,
+.collares {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -82,13 +92,16 @@ iframe {
   align-items: center;
   width: 100%;
 }
+
 .nav img {
   width: 70px;
 }
+
 .nav ul {
   display: flex;
   list-style-type: none;
 }
+
 .nav ul li {
   margin-left: 30px;
 }
@@ -101,51 +114,64 @@ iframe {
   justify-content: center;
   gap: 10px;
 }
+
 .galeria_venta div {
   display: flex;
   flex-direction: column;
-  gap: 5px;
   align-items: center;
+  gap: 5px;
   text-decoration: underline;
   overflow: hidden;
 }
+
 .galeria_venta div a {
   text-align: center;
 }
+
 .galeria_venta div img {
   width: 190px;
   height: 250px;
   transition: 0.9s;
 }
+
 .galeria_venta div img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
 .galeria_venta div:first-child {
   grid-area: titulo;
   margin: 20px 0px;
 }
+
 .galeria_venta div:nth-child(2) {
   grid-area: f1;
 }
+
 .galeria_venta div:nth-child(3) {
   grid-area: f2;
 }
+
 .galeria_venta div:nth-child(4) {
   grid-area: f3;
 }
+
 .galeria_venta div:nth-child(5) {
   grid-area: f4;
 }
+
 .galeria_venta div:nth-child(6) {
   grid-area: f5;
 }
+
 .galeria_venta div:nth-child(7) {
   grid-area: f6;
 }
+
 .galeria_venta div:nth-child(8) {
   grid-area: f7;
 }
+
 .galeria_venta div:nth-child(9) {
   grid-area: f8;
 }
@@ -175,6 +201,7 @@ iframe {
   flex-wrap: wrap;
   margin-bottom: 80px;
 }
+
 .estrella18k h1 {
   text-align: center;
   font-weight: 400;
@@ -195,6 +222,7 @@ iframe {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .encuentranos div h4 {
   margin-top: 20px;
 }
@@ -213,28 +241,26 @@ iframe {
   align-items: center;
   margin: 10px;
 }
+
 .telefono img {
   width: 50px;
   align-items: center;
   margin: 5px;
 }
+
 .telefono div {
   width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+
 .telefono div p {
   justify-content: center;
   margin: 0;
 }
 
 .collares {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 300px;
   background-image: url(../img/DB0B07A1-A58E-49A1-9284-4BC6A3B03112_1_201_a.jpeg_1.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -243,6 +269,7 @@ iframe {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+
 .collares h1 {
   text-align: center;
   font-weight: 400;
@@ -261,16 +288,12 @@ iframe {
   margin-right: 50px;
   margin-left: 150px;
 }
+
 .collares2 p {
   margin-bottom: 0px;
 }
 
 .aros {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 300px;
   background-image: url(../img/banner_aros.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,6 +302,7 @@ iframe {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+
 .aros h1 {
   text-align: center;
   font-weight: 400;
@@ -297,16 +321,12 @@ iframe {
   margin-right: 50px;
   margin-left: 150px;
 }
+
 .aros2 p {
   margin-bottom: 0px;
 }
 
 .anillos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 300px;
   background-image: url(../img/banner_anillos.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -315,6 +335,7 @@ iframe {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+
 .anillos h1 {
   text-align: center;
   font-weight: 400;
@@ -333,6 +354,7 @@ iframe {
   margin-right: 50px;
   margin-left: 150px;
 }
+
 .anillos2 p {
   margin-bottom: 0px;
 }
@@ -358,6 +380,7 @@ iframe {
   font-size: 0.7rem;
   padding-right: 20px;
 }
+
 .contacto3 p {
   margin-bottom: 0;
   margin-left: 5px;
@@ -371,16 +394,20 @@ iframe {
   align-content: center;
   margin: 20px 0;
 }
+
 .formulario div {
   width: 70%;
 }
+
 .formulario div p {
   width: 100%;
   margin-bottom: 20px;
 }
+
 .formulario div label {
   font-weight: bold;
 }
+
 .formulario div input {
   width: 100%;
   height: 20px;
@@ -389,6 +416,7 @@ iframe {
   border-width: 1px;
   margin-bottom: 20px;
 }
+
 .formulario div textarea {
   width: 100%;
   border-color: #bcbcbc;
@@ -410,12 +438,14 @@ iframe {
     justify-content: center;
     gap: 10px;
   }
+
   .encuentranos2 {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 }
+
 @media (min-width: 1100px) {
   .galeria_venta {
     display: grid;

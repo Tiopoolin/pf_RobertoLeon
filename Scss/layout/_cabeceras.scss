@@ -1,9 +1,5 @@
 .collares {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
+    @extend %flex-center;
     background-image: url(../img/DB0B07A1-A58E-49A1-9284-4BC6A3B03112_1_201_a.jpeg_1.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,11 +39,7 @@
 }
 
 .aros {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
+    @extend %flex-center;
     background-image: url(../img/banner_aros.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,11 +80,7 @@
 
 
 .anillos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
+    @extend %flex-center;
     background-image: url(../img/banner_anillos.webp);
     background-repeat: no-repeat;
     background-size: cover;
