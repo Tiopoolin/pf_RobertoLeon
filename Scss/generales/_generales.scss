@@ -10,6 +10,7 @@ body {
         "main"
         "section"
         "encuentranos"
+        "quienes"
         "footer";
     font-family: 'Raleway', sans-serif;
 
@@ -35,10 +36,17 @@ main {
 
 }
 
-section {
+section .encuentranos {
     grid-area: section;
 
 }
+section .quienes {
+    grid-area: quienes;
+
+}
+
+
+
 
 footer {
     grid-area: footer;
@@ -91,6 +99,11 @@ h4{
 
 .pic1 {
     height: 95%;
+}
+
+.col ul {
+    list-style-type:circle;
+
 }
 
 #mensaje {

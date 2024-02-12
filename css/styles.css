@@ -14,7 +14,7 @@
 
 body {
   display: grid;
-  grid-template-areas: "header" "main" "section" "encuentranos" "footer";
+  grid-template-areas: "header" "main" "section" "encuentranos" "quienes" "footer";
   font-family: "Raleway", sans-serif;
 }
 
@@ -35,8 +35,12 @@ main {
   margin-top: 80px;
 }
 
-section {
+section .encuentranos {
   grid-area: section;
+}
+
+section .quienes {
+  grid-area: quienes;
 }
 
 footer {
@@ -88,6 +92,10 @@ h4 {
 
 .pic1 {
   height: 95%;
+}
+
+.col ul {
+  list-style-type: circle;
 }
 
 #mensaje {
@@ -144,12 +152,13 @@ h4 {
 }
 .galeria_venta div p {
   text-align: center;
-  text-decoration: underline;
+  font-weight: bolder;
 }
 .galeria_venta div img {
   width: 190px;
   height: 250px;
   transition: 0.9s;
+  margin-top: 10px;
 }
 .galeria_venta div img:hover {
   transform: scale(1.05);
@@ -161,27 +170,75 @@ h4 {
 }
 .galeria_venta div:nth-child(2) {
   grid-area: f1;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  width: 260px;
+  height: 350px;
 }
 .galeria_venta div:nth-child(3) {
   grid-area: f2;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  width: 260px;
+  height: 350px;
 }
 .galeria_venta div:nth-child(4) {
   grid-area: f3;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  width: 260px;
+  height: 350px;
 }
 .galeria_venta div:nth-child(5) {
   grid-area: f4;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  width: 260px;
+  height: 350px;
 }
 .galeria_venta div:nth-child(6) {
   grid-area: f5;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  width: 260px;
+  height: 350px;
 }
 .galeria_venta div:nth-child(7) {
   grid-area: f6;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  width: 260px;
+  height: 350px;
 }
 .galeria_venta div:nth-child(8) {
   grid-area: f7;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  width: 260px;
+  height: 350px;
 }
 .galeria_venta div:nth-child(9) {
   grid-area: f8;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  width: 260px;
+  height: 350px;
 }
 
 .galeria_venta2 h2 {
@@ -240,6 +297,18 @@ h4 {
   align-items: center;
 }
 
+.quienes {
+  width: 100%;
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quienes p {
+  width: 70%;
+  margin-top: 40px;
+}
+
 .telefono {
   width: 100%;
   display: flex;
@@ -281,6 +350,7 @@ h4 {
   align-items: center;
   justify-items: center;
   margin-right: 50px;
+  margin-left: 10px;
 }
 
 .collares2 {
@@ -288,6 +358,7 @@ h4 {
   align-items: center;
   justify-items: center;
   margin-right: 50px;
+  margin-left: 10px;
 }
 .collares2 p {
   margin-bottom: 0px;
@@ -312,6 +383,7 @@ h4 {
   align-items: center;
   justify-items: center;
   margin-right: 50px;
+  margin-left: 10px;
 }
 
 .aros2 {
@@ -319,6 +391,7 @@ h4 {
   align-items: center;
   justify-items: center;
   margin-right: 50px;
+  margin-left: 10px;
 }
 .aros2 p {
   margin-bottom: 0px;
@@ -343,6 +416,7 @@ h4 {
   align-items: center;
   justify-items: center;
   margin-right: 50px;
+  margin-left: 10px;
 }
 
 .anillos2 {
@@ -350,6 +424,7 @@ h4 {
   align-items: center;
   justify-items: center;
   margin-right: 50px;
+  margin-left: 10px;
 }
 .anillos2 p {
   margin-bottom: 0px;
