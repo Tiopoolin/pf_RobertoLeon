@@ -4,7 +4,6 @@
 }
 
 body {
-    margin: 8px;
     display: grid;
     grid-template-areas:
         "header"
@@ -59,13 +58,19 @@ iframe {
     width: 100%;
 }
 
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
 .max-width-100 {
     max-width: 19%;
 }
 
 .small {
     font-size: map-get($formatos_textos, peque);
-}   
+}
 
 .medium {
     font-size: map-get($formatos_textos, mediano);
@@ -86,4 +91,20 @@ iframe {
 
 .pic1 {
     height: 95%;
+}
+
+#mensaje {
+    padding: 10px;
+}
+
+#telefono {
+    padding: 10px;
+}
+
+#nombre {
+    padding: 10px;
+}
+
+#email{
+    padding: 10px;
 }

@@ -5,15 +5,15 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    flex-wrap: wrap;
     margin-bottom: 20px;
+
     h1 {
 
 
         text-align: center;
         font-weight: 400;
         letter-spacing: 5PX;
-    
+
     }
 
 }
@@ -21,17 +21,17 @@
 .collares1 {
 
     align-items: center;
-    margin-left: 150px;
+    justify-items: center;
+    margin-right: 50px;
 
 }
 
 .collares2 {
-
     display: flex;
-    gap: 10px;
     align-items: center;
+    justify-items: center;
     margin-right: 50px;
-    margin-left: 150px;
+
     p {
         margin-bottom: 0px;
     }
@@ -47,13 +47,14 @@
     position: relative;
     flex-wrap: wrap;
     margin-bottom: 20px;
+
     h1 {
 
 
         text-align: center;
         font-weight: 400;
         letter-spacing: 5PX;
-    
+
     }
 
 }
@@ -61,17 +62,17 @@
 .aros1 {
 
     align-items: center;
-    margin-left: 150px;
-
+    justify-items: center;
+    margin-right: 50px;
 }
 
 .aros2 {
 
     display: flex;
-    gap: 10px;
     align-items: center;
+    justify-items: center;
     margin-right: 50px;
-    margin-left: 150px;
+
     p {
         margin-bottom: 0px;
     }
@@ -88,12 +89,13 @@
     position: relative;
     flex-wrap: wrap;
     margin-bottom: 20px;
+
     h1 {
 
         text-align: center;
         font-weight: 400;
         letter-spacing: 5PX;
-    
+
     }
 
 }
@@ -101,17 +103,18 @@
 .anillos1 {
 
     align-items: center;
-    margin-left: 150px;
+    justify-items: center;
+    margin-right: 50px;
 
 }
 
 .anillos2 {
 
     display: flex;
-    gap: 10px;
     align-items: center;
+    justify-items: center;
     margin-right: 50px;
-    margin-left: 150px;
+
     p {
         margin-bottom: 0px;
     }
@@ -141,6 +144,7 @@
     align-items: center;
     font-size: .7rem;
     padding-right: 20px;
+
     p {
         margin-bottom: 0;
         margin-left: 5px;
