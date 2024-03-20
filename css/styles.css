@@ -7,6 +7,15 @@
   height: 300px;
 }
 
+.galeria_venta div:nth-child(9), .galeria_venta div:nth-child(8), .galeria_venta div:nth-child(7), .galeria_venta div:nth-child(6), .galeria_venta div:nth-child(5), .galeria_venta div:nth-child(4), .galeria_venta div:nth-child(3), .galeria_venta div:nth-child(2) {
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #dee2e6;
+  width: 260px;
+  height: 350px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +23,7 @@
 
 body {
   display: grid;
-  grid-template-areas: "header" "main" "section" "encuentranos" "quienes" "footer";
+  grid-template-areas: "header" "main" "quienes" "info" "section" "encuentranos" "footer";
   font-family: "Raleway", sans-serif;
 }
 
@@ -41,6 +50,10 @@ section .encuentranos {
 
 section .quienes {
   grid-area: quienes;
+}
+
+section .info {
+  grid-area: info;
 }
 
 footer {
@@ -136,7 +149,7 @@ h4 {
   grid-template-areas: "titulo titulo" "f1 f2" "f3 f4" "f5 f6" "f7 f8";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  justify-content: center;
+  justify-items: center;
   gap: 10px;
 }
 .galeria_venta div {
@@ -149,6 +162,7 @@ h4 {
 .galeria_venta div a {
   text-align: center;
   text-decoration: underline;
+  margin-top: 20px;
 }
 .galeria_venta div p {
   text-align: center;
@@ -170,75 +184,27 @@ h4 {
 }
 .galeria_venta div:nth-child(2) {
   grid-area: f1;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #dee2e6;
-  width: 260px;
-  height: 350px;
 }
 .galeria_venta div:nth-child(3) {
   grid-area: f2;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #dee2e6;
-  width: 260px;
-  height: 350px;
 }
 .galeria_venta div:nth-child(4) {
   grid-area: f3;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #dee2e6;
-  width: 260px;
-  height: 350px;
 }
 .galeria_venta div:nth-child(5) {
   grid-area: f4;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #dee2e6;
-  width: 260px;
-  height: 350px;
 }
 .galeria_venta div:nth-child(6) {
   grid-area: f5;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #dee2e6;
-  width: 260px;
-  height: 350px;
 }
 .galeria_venta div:nth-child(7) {
   grid-area: f6;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #dee2e6;
-  width: 260px;
-  height: 350px;
 }
 .galeria_venta div:nth-child(8) {
   grid-area: f7;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #dee2e6;
-  width: 260px;
-  height: 350px;
 }
 .galeria_venta div:nth-child(9) {
   grid-area: f8;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #dee2e6;
-  width: 260px;
-  height: 350px;
 }
 
 .galeria_venta2 h2 {
@@ -299,12 +265,25 @@ h4 {
 
 .quienes {
   width: 100%;
-  margin: 50px 0px;
+  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .quienes p {
+  width: 70%;
+  margin-top: 40px;
+}
+
+.info {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dee2e6;
+}
+.info p {
   width: 70%;
   margin-top: 40px;
 }

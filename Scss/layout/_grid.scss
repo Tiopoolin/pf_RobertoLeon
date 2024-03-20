@@ -10,7 +10,9 @@
     ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    justify-content: center;
+    justify-items: center;
+
+  
     gap: 10px;
 
 
@@ -20,9 +22,11 @@
         margin: 10px 5px 20px 5px;
         overflow: hidden;
 
+
         a {
             text-align: center;
             text-decoration: underline;
+            margin-top: 20px;
         }
 
         p {
@@ -51,84 +55,45 @@
 
         &:nth-child(2) {
             grid-area: f1;
-            border-style: solid;
-            border-radius: 20px;
-            border-width: 2px;
-            border-color: $gris_claro_corp;
-            width: 260px;
-            height: 350px;
+            @extend %flex-card;
+      
 
 
         }
 
         &:nth-child(3) {
             grid-area: f2;
-            border-style: solid;
-            border-radius: 20px;
-            border-width: 2px;
-            border-color: $gris_claro_corp;
-            width: 260px;
-            height: 350px;
+            @extend %flex-card;
         }
 
         &:nth-child(4) {
             grid-area: f3;
-            border-style: solid;
-            border-radius: 20px;
-            border-width: 2px;
-            border-color: $gris_claro_corp;
-            width: 260px;
-            height: 350px;
+            @extend %flex-card;
         }
 
         &:nth-child(5) {
             grid-area: f4;
-            border-style: solid;
-            border-radius: 20px;
-            border-width: 2px;
-            border-color: $gris_claro_corp;
-            width: 260px;
-            height: 350px;
+            @extend %flex-card;
         }
 
         &:nth-child(6) {
             grid-area: f5;
-            border-style: solid;
-            border-radius: 20px;
-            border-width: 2px;
-            border-color: $gris_claro_corp;
-            width: 260px;
-            height: 350px;
+            @extend %flex-card;
         }
 
         &:nth-child(7) {
             grid-area: f6;
-            border-style: solid;
-            border-radius: 20px;
-            border-width: 2px;
-            border-color: $gris_claro_corp;
-            width: 260px;
-            height: 350px;
+            @extend %flex-card;
         }
 
         &:nth-child(8) {
             grid-area: f7;
-            border-style: solid;
-            border-radius: 20px;
-            border-width: 2px;
-            border-color: $gris_claro_corp;
-            width: 260px;
-            height: 350px;
+            @extend %flex-card;
         }
 
         &:nth-child(9) {
             grid-area: f8;
-            border-style: solid;
-            border-radius: 20px;
-            border-width: 2px;
-            border-color: $gris_claro_corp;
-            width: 260px;
-            height: 350px;
+            @extend %flex-card;
         }
 
     }
@@ -194,18 +159,29 @@
 
 .encuentranos2 {
     width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(flex, column, center);
 }
 
 .quienes {
     width: 100%;
-    margin: 50px 0px;
+    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    p {
+        width: 70%;
+        margin-top: 40px;
+    }
+}
+
+.info {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gris_claro_corp;
 
     p {
         width: 70%;
@@ -219,7 +195,7 @@
 
     margin: 10px;
 
-    img {
+    img {           
         width: 50px;
         align-items: center;
         margin: 5px;
