@@ -67,6 +67,13 @@ section .encuentranos {
   grid-area: encuentranos;
 }
 
+nav {
+  width: 100%;
+}
+nav div {
+  width: 100%;
+}
+
 footer {
   grid-area: footer;
   display: flex;
