@@ -13,6 +13,15 @@
         gap: 10px;
     }
 
+    .info {
+        @include flex(flex, row, center);
+        flex-wrap: wrap;
+        div {
+            width: 25%;
+            margin: 0 0;
+        }
+    }
+
 
 
     .encuentranos2 {
@@ -41,5 +50,5 @@
         gap: 10px;
     }
 
-
 }
+
