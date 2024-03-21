@@ -55,10 +55,8 @@ section .info {
 
 footer {
     grid-area: footer;
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column, center);
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 

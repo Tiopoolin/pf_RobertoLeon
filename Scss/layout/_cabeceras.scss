@@ -132,10 +132,8 @@
 .contacto {
     width: 100%;
     height: 150px;
-    display: flex;
-    flex-direction: row;
+    @include flex(flex, row, center);
     justify-content: space-between;
-    align-items: center;
     background-color: #252525;
 
 
